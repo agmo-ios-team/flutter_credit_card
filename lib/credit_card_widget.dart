@@ -19,6 +19,7 @@ const Map<CardType, String> CardTypeIconAsset = <CardType, String>{
   CardType.elo: 'icons/elo.png',
   CardType.hipercard: 'icons/hipercard.png',
 };
+typedef CreditCardWidgetState = _CreditCardWidgetState;
 
 class CreditCardWidget extends StatefulWidget {
   /// A widget showcasing credit card UI.
