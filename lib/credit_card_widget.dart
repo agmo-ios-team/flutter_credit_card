@@ -660,7 +660,7 @@ class _CreditCardWidgetState extends State<CreditCardWidget>
         for (List<String> patternRange in patterns) {
           // Remove any spaces
           String ccPatternStr =
-              cardNumber.replaceAll(RegExp(r'\s+\b|\b\s'), '');
+              cardNumber.replaceAll(RegExp(r'\s+\b|\b\s|-'), '');
           final int rangeLen = patternRange[0].length;
           // Trim the Credit Card number string to match the pattern prefix length
           if (rangeLen < cardNumber.length) {
